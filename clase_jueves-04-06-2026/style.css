@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primario: blue;
+    --secundario: red;
+    --terciario: green;
+}
+
+.caja {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: var(--primario);
+    border: 1rem solid black;
+}
+
+.cajita {
+    margin: 3rem;
+    padding: 1.5rem;
+    background-color: var(--secundario);
+    border: 1rem solid white;
+}

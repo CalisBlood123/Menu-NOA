@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(213, 195, 241);
+}
+
+button {
+    background-color: lime;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid;
+    border-color: limegreen;
+}
+
+img {
+    height: 10rem;
+}
