@@ -47,9 +47,23 @@ console.log(cantidadMenores)
 
 listaSuper.map (
     function(compra){
-        compra.precio = 100
-        return compra
+        compra.precio = 100;
+        compra.precio = compra.precio + 50;
+        return compra;
     }
 )
 
 console.log(listaSuper)
+
+//DOM (Document Object Model)
+//DOM JAVASCRIPT
+
+console.log(document);
+
+const inputEmail = document.getElementById("email");
+const inputPassword = document.getElementById("password");
+
+const login = () => {
+    console.log(inputEmail.value);
+    console.log(inputPassword.value);
+}
