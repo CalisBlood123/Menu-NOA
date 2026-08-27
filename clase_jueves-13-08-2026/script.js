@@ -101,7 +101,7 @@ const listaSuper = [
     {
         producto: "papel higienico",
         tipo: "normal?",
-        cantidad: 78
+        cantidad: 72
     }
 ]
 
@@ -112,4 +112,4 @@ console.log(listaSuper[1].producto)
 console.log(listaSuper[2])
 console.log(listaSuper[2].producto)
 
-//TAREA: nombre, rol, hijos, cantidadHijos, vive, tienen que ser 6 datos, asunto comision n°(numero de la comision) y el NOMBRE, con el link del repositorio, acceder un item dell array y a un objeto dentro del array
+//TAREA: nombre, rol, hijos, cantidad Hijos, vive, tienen que ser 6 datos, asunto comision n°(numero de la comision) y el NOMBRE, con el link del repositorio, acceder un item dell array y a un objeto dentro del array
