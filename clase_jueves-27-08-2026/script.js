@@ -67,3 +67,22 @@ const login = () => {
     console.log(inputEmail.value);
     console.log(inputPassword.value);
 }
+
+listaSuper.push(
+    {
+        producto: "zapatos",
+        tipo: "especial",
+        cantidad: 2553
+    }
+);
+console.log(listaSuper)
+
+//let listaConA = listaSuper.filter(listaA => listaA.producto.includes("a"))
+
+let listaConA = listaSuper.filter (
+    function(listaA){
+        return listaA.producto.includes("a")
+    }
+)
+
+console.log(listaConA)
