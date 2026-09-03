@@ -29,3 +29,14 @@ const guardarLocal = () => {
 }
 
 //esto se guarda en aplicaciones/almacenamientoLocal (localStorage.setItem("clave", valor))
+
+//se guarda de manera locar en el navegador, esto cambia al cambiar de navegador
+
+const traerDato = () => {
+    const dato = localStorage.getItem("emailUsuario");
+    console.log(dato);
+}
+
+//getitem trae el elemento
+
+//localstorege.clear (borra todos los datos de el local storage)
