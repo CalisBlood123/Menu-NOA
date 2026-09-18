@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #25232a;
+    --muted: #746f7c;
+    --accent: #ce5a3f;
+    --accent-dark: #a94330;
+    --paper: #fffaf4;
+    --line: #e9ddd2;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--ink);
+    background: #f2e5d8;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.page-shell {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 56px 20px 32px;
+    background: radial-gradient(circle at 12% 15%, #f8d7be 0, transparent 30%),
+        radial-gradient(circle at 90% 80%, #e8c4b7 0, transparent 28%);
+}
+
+.contact-card {
+    width: min(100%, 560px);
+    padding: clamp(28px, 6vw, 52px);
+    background: rgb(255 250 244 / 94%);
+    border: 1px solid rgb(255 255 255 / 80%);
+    box-shadow: 0 24px 60px rgb(91 44 31 / 14%);
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    color: var(--accent);
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-bottom: 12px;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    line-height: 0.98;
+    font-weight: 500;
+}
+
+.intro > p:last-child {
+    max-width: 38ch;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-field {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    outline: none;
+    color: var(--ink);
+    background: #fffdfb;
+    font: 1rem/1.4 Arial, sans-serif;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+textarea {
+    min-height: 124px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa1a0;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgb(206 90 63 / 15%);
+}
+
+button {
+    margin-top: 4px;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 4px;
+    color: #fffaf4;
+    background: var(--accent);
+    cursor: pointer;
+    font: 700 0.9rem Arial, sans-serif;
+    transition: background 160ms ease, transform 160ms ease;
+}
+
+button span {
+    margin-left: 8px;
+    font-size: 1.2rem;
+    vertical-align: -1px;
+}
+
+button:hover {
+    background: var(--accent-dark);
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid rgb(37 35 42 / 35%);
+    outline-offset: 3px;
+}
+
+.form-status {
+    min-height: 1.2em;
+    color: #39704e;
+    font: 0.88rem Arial, sans-serif;
+}
+
+footer {
+    padding: 0 20px 24px;
+    color: #8e7167;
+    font: 0.75rem Arial, sans-serif;
+    text-align: center;
+}
