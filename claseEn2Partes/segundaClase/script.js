@@ -61,7 +61,8 @@ const registrarUsuario = async (event) => {
     )
 
     if (emailFilter.length > 0) {
-        console.error("no te podes registrar")
+        alert.error("no te podes registrar");
+        return;
     }
 
     console.log(emailFilter)
@@ -77,7 +78,7 @@ const registrarUsuario = async (event) => {
         return;
     }
 
-    localStorage.setItem("emailUsuario", email)
+    localStorage.setItem("emailUsuario", email);
     window.location.href = "bienvenida.html";
 
 }
